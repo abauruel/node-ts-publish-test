@@ -1,0 +1,26 @@
+{
+    "name": "@abauruel/node-ts-publish-test-package",
+    "version": "1.0.0",
+    "description": "packge test",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abauruel/node-ts-publish-test.git"
+    },
+    "keywords": ["hello", "world", "typescript"],
+    "author": "Alex Claude",
+    "license": "MIT",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "devDependencies": {
+        "typescript":"^5.0.0"
+    }
+
+
+}
